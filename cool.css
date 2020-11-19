@@ -12,8 +12,16 @@ body{
     
 
 }
-h2, p{
+h1, p{
     color: #660000;
+}
+p {
+    font-size: 1.25em;
+}
+#linksList {
+    margin-top: 2em;
+    margin-left: 6em;
+    margin-right: 6em;
 }
 
 /******* Nav Bar    *******/
@@ -58,3 +66,4 @@ a:hover {
 .route:hover::before {
     width: 100%;
 }
+
