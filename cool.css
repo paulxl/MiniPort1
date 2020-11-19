@@ -1,0 +1,60 @@
+body{
+    text-align: center;
+
+}
+#scooter-image{
+    background-image: url(gitAndGo.jpeg);
+    background-size: contain;
+    background-position: center;
+    /* background-color: #cccccc; */
+    background-repeat: no-repeat;
+    height: 32em;
+    
+
+}
+h2, p{
+    color: #660000;
+}
+
+/******* Nav Bar    *******/
+.navbar {
+    padding-bottom: .5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navUL {
+    list-style: none;
+}
+#navUL li {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: larger;
+    text-align: center;
+    padding: 15px 0px;
+    position: relative;
+}
+.route {
+    color: darkblue;
+    font-size: larger;
+    word-spacing: -.4ch;
+}
+
+a:hover {
+    color: #00ccff;
+}
+
+.route::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: lightblue;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+.route:hover::before {
+    width: 100%;
+}
