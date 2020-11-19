@@ -1,0 +1,67 @@
+body {
+    background-color: #111200;
+    
+    text-align: center;
+}
+
+.sign {
+    margin: auto;
+    display: flex;
+}
+
+p {
+    color: white;
+    font-size: 2em;
+}
+
+
+
+#sourceOfArt {
+    font-size: medium;
+    font-style: italic;
+}
+/******* Nav Bar    *******/
+.navbar {
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navUL {
+    list-style: none;
+}
+#navUL li {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 2em;
+    text-align: center;
+    padding: 15px 0px;
+    position: relative;
+}
+.route {
+    color: white;
+    font-size: 1.5em;
+    word-spacing: -.4ch;
+    margin: 1.5em ;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: lightskyblue;
+}
+
+.route::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    /* background-color: lightblue; */
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+.route:hover::before {
+    width: 100%;
+}

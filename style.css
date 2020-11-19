@@ -1,0 +1,98 @@
+body{
+    background-image: url(frenchWindow1.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1, h2 {
+    color: #660000;
+    text-align: center;
+}
+p{
+    color: #660000;
+    text-align: center;
+    font-size: 2vh;
+    line-height: 3vh;
+    list-style: none;
+}
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+/******* Nav Bar    *******/
+.navbar {
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navUL {
+    list-style: none;
+}
+#navUL li {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: larger;
+    text-align: center;
+    padding: 15px 0px;
+    position: relative;
+}
+.route {
+    color: darkblue;
+    font-size: larger;
+    word-spacing: -.4ch;
+}
+
+a:hover {
+    color: #00ccff;
+}
+
+.route::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: lightblue;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+.route:hover::before {
+    width: 100%;
+}
+
+/***** Links at bottom of page   ******/
+#xlinks {
+    /* display: flex;
+    justify-content: center; */
+    display: block;
+    margin: auto;
+   width: 99%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    /* margin-top: 3vh;
+    margin-bottom: 6vh; */
+    position: absolute;
+    bottom: 0;
+    height: 5em;
+  
+    /* justify-content: center;
+    align-items: flex-end; */
+}
+
+#xlinks a {
+    padding: 0 40px;
+    color: #660000;
+}
+
+#xlinks a:hover {
+    color: #d2b38c;
+}
+
+
+
